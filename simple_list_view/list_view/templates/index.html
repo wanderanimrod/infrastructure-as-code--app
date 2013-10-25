@@ -11,7 +11,19 @@
             {% endfor %}
 	    </ul>
         {% else %}
-            <p>No items to display.</p>
+            <p>The Simple List View Django app is up an running! In order to be able to enter some list items
+                and see them on this screen, please get into your virtual machine and run the following commands.
+                <ul>
+                <li>source /home/simple-list-view/virtualenv/bin/activate</li>
+                <li>cd /home/simple-list-view/app/simple-list-view</li>
+                <li>./manage.py createsuperuser</li>
+                </ul>
+
+            <p>Enter a username, a dummy but well formed email, and a password. If you did that right, you should
+                be able to use that username and password to login at 127.0.0.1:8077/admin in your browser. Enter
+                a few items and go back to 127.0.0.1:8077. You should then see the items you entered listed on
+                the home page!
+            </p>
         {% endif %}
     </body>
 </html>
